@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           <Skills />
         </Container>
       </Section>
-      <SectionNext>
+      <SectionNext id="portfolio">
         <Container>
           <Portfolio />
         </Container>

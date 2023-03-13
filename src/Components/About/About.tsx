@@ -7,13 +7,16 @@ export const About: React.FC = () => {
       <Wrapper>
         <h2>About me</h2>
         <p>
-          Hello, my name is Oleksii, I like front-end development, with the help
-          of this site I want to show you my skills, yes, I know that I am still
-          a young developer, but I am constantly learning and doing everything
-          to overcome all the problems that occur on my way.
+          Hi there, my name is Oleksii and I am passionate about front-end
+          development. I created this website to showcase my skills and
+          abilities. While I am aware that I am a relatively new developer, I am
+          always striving to learn and improve, tackling any challenges that
+          come my way.
         </p>
         <p>
-          I finished the courses at the educational GoIT and received a{" "}
+          I have completed the courses at GoIT, an educational institution, and
+          have been awarded a certificate that confirms my successful completion
+          of the program. Regenerate response{" "}
           <a href={cv} target="_blank" rel="noreferrer">
             certificate
           </a>
@@ -21,11 +24,12 @@ export const About: React.FC = () => {
         </p>
 
         <p>
-          I will be very happy to work with you and in your team, I love new
-          acquaintances, I hope that you will help me gain more experience, and
-          I will help you in your projects, at the moment I am open to
-          cooperation in remote mode, but in the future I can move to your city
-          to work from the office.
+          I would be delighted to collaborate with you and your team. I am
+          always eager to meet new people and build meaningful connections. I
+          hope to gain more experience working alongside you, while
+          simultaneously contributing to your projects. Currently, I am
+          available to work remotely, but in the future, I am open to relocating
+          to your city to work in the office.
         </p>
       </Wrapper>
     </Container>

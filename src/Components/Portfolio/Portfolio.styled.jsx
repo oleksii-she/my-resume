@@ -21,16 +21,11 @@ export const WrapperPortfolio = styled.div`
   }
 
   h3 {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: calc(33 / 24);
     margin-bottom: 15px;
-    ${up("tablet")} {
-      font-size: 34px;
-      line-height: 42px;
-    }
 
     div {
-      border: 1px black;
     }
   }
   img {

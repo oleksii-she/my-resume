@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
     font-size: 18px;
     line-height: calc(22 / 18);
     margin-bottom: 50px;
+    text-align: left;
   }
 
   a {
