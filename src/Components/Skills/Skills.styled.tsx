@@ -7,13 +7,14 @@ import {
   Redux,
   Github,
 } from "@styled-icons/boxicons-logos/";
-import { Js } from "@styled-icons/fa-brands";
+
 import {
   Html5,
   Sass,
   Styledcomponents,
   Nextdotjs,
   Css3,
+  Javascript,
 } from "@styled-icons/simple-icons";
 
 import { StarRate } from "@styled-icons/material/StarRate";
@@ -65,23 +66,37 @@ export const WrapperSkills = styled.div`
   }
 `;
 
-export const SkillBox = styled.div`
+export const SkillList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0px;
+  ${up("tablet")} {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+`;
+
+export const SkillBox = styled.li`
   display: flex;
   -webkit-box-align: center;
   flex-direction: column;
   align-items: center;
-
-  margin-bottom: 60px;
-
-  span {
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
 `;
 
 export const ReactLogoIcon = styled(ReactLogo)`
   width: 180px;
   color: #61dbfb;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -90,6 +105,7 @@ export const ReactLogoIcon = styled(ReactLogo)`
 export const NodejsIconStyle = styled(Nodejs)`
   width: 180px;
   color: #68a063;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -98,6 +114,7 @@ export const NodejsIconStyle = styled(Nodejs)`
 export const ReduxIconStyle = styled(Redux)`
   width: 180px;
   color: #764abc;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -105,14 +122,16 @@ export const ReduxIconStyle = styled(Redux)`
 
 export const GithubIconStyle = styled(Github)`
   width: 180px;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
 `;
 
-export const JsIconStyle = styled(Js)`
+export const JsIconStyle = styled(Javascript)`
   width: 180px;
   color: #f0db4f;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -121,6 +140,7 @@ export const JsIconStyle = styled(Js)`
 export const HtmlIconStyle = styled(Html5)`
   width: 180px;
   color: rgb(228, 77, 38);
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -129,6 +149,7 @@ export const HtmlIconStyle = styled(Html5)`
 export const FiletypeScssIconStyle = styled(Sass)`
   width: 180px;
   color: #cd6799;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -138,12 +159,14 @@ export const StyledcomponentsIconStyle = styled(Styledcomponents)`
   width: 180px;
   color: yellow;
   stroke: #cd6799;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
 `;
 export const NextdotjsIconStyle = styled(Nextdotjs)`
   width: 180px;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
@@ -152,6 +175,7 @@ export const NextdotjsIconStyle = styled(Nextdotjs)`
 export const Css3IconStyle = styled(Css3)`
   width: 180px;
   color: #2d20e3;
+  margin-bottom: 15px;
   ${up("tablet")} {
     width: 80px;
   }
