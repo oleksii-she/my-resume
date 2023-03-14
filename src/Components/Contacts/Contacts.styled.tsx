@@ -5,9 +5,11 @@ import { Github, Linkedin, Telegram } from "@styled-icons/simple-icons";
 
 export const ContactsWrapper = styled.div`
   padding-top: 82px;
+  padding-bottom: 80px;
   text-align: center;
   ${up("tablet")} {
     padding-top: 114px;
+    padding-bottom: 111px;
   }
 
   h2 {

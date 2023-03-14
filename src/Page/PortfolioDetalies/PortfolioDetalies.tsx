@@ -10,11 +10,12 @@ const PortfilioDetalies: React.FC = () => {
   const { isMobile }: any = useMatchMedia();
   const { pathname } = useLocation();
   const [array, setArray]: any = useState([]);
+  console.log(pathname);
 
   useEffect(() => {
     const detalies = () => {
       const detaliesPortfolio = [...personalProject, ...commandProject];
-      const id = pathname.replace("/portfolio/", "");
+      const id = pathname.replace("/portfolio=", "");
       detaliesPortfolio.forEach((el) => {
         if (el.id === id) {
           return setArray([el]);

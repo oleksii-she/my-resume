@@ -1,4 +1,4 @@
-export { default as am } from "./am.png";
+export { default as am } from "./amTable.png";
 
 export { default as amTable } from "./amTable.png";
 

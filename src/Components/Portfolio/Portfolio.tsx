@@ -18,7 +18,7 @@ export const Portfolio: React.FC = () => {
             <li key={id}>
               <picture>
                 <img src={isMobile ? imgMob : img} alt="webStudio" />
-                <Link to={`/portfolio/${id}`}>
+                <Link to={`/portfolio=${id}`}>
                   <p>{title}</p>
                 </Link>
               </picture>
@@ -35,7 +35,7 @@ export const Portfolio: React.FC = () => {
                 <li key={id}>
                   <picture>
                     <img src={isMobile ? imgMob : img} alt="webStudio" />
-                    <Link to={`/portfolio/${id}`}>
+                    <Link to={`/portfolio=${id}`}>
                       <p>{title}</p>
                     </Link>
                   </picture>

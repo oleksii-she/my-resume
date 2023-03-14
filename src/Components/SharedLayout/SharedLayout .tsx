@@ -12,9 +12,9 @@ export const SharedLayout: React.FC = () => {
         <Outlet />
       </Suspense>
 
-      <div id="contacts">
+      <footer id="contacts">
         <Contacts />
-      </div>
+      </footer>
     </>
   );
 };
