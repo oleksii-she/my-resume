@@ -1,12 +1,5 @@
 import { amTable, amMobile } from "../../Images";
-import {
-  Title,
-  Wrapper,
-  EmailIcom,
-  TelegramIcon,
-  LinkedinIcon,
-  GithubIcon,
-} from "./Hero.styed";
+import { Title, Wrapper } from "./Hero.styed";
 
 import { useMatchMedia } from "../../Hooks/useMatchMedia";
 export const Hero: React.FC = () => {
