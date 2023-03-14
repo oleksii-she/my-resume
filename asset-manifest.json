@@ -1,18 +1,16 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.06b42921.css",
-    "main.js": "/my-resume/static/js/main.b3c89c5e.js",
-    "static/js/271.066b7149.chunk.js": "/my-resume/static/js/271.066b7149.chunk.js",
-    "static/js/274.80023c72.chunk.js": "/my-resume/static/js/274.80023c72.chunk.js",
-    "static/js/830.376fe656.chunk.js": "/my-resume/static/js/830.376fe656.chunk.js",
-    "static/media/amTable.png": "/my-resume/static/media/amTable.f1e53f7e29936b05626d.png",
-    "static/media/amMobile.png": "/my-resume/static/media/amMobile.1f7b2b551967356041bf.png",
-    "static/media/am.png": "/my-resume/static/media/am.434d617e2f4d3a2a538b.png",
+    "main.js": "/my-resume/static/js/main.71055d7a.js",
+    "static/js/663.197f8c52.chunk.js": "/my-resume/static/js/663.197f8c52.chunk.js",
+    "static/js/968.4341acc8.chunk.js": "/my-resume/static/js/968.4341acc8.chunk.js",
     "static/media/cv.pdf": "/my-resume/static/media/cv.d66097a7df76277d70ce.pdf",
     "static/media/petly.png": "/my-resume/static/media/petly.ebc5de3ea6b85638adfd.png",
     "static/media/filmoteka.png": "/my-resume/static/media/filmoteka.5a652426a3e3ee7fd554.png",
     "static/media/webStudio.png": "/my-resume/static/media/webStudio.e0f4830856a6f3f369a4.png",
     "static/media/donut.png": "/my-resume/static/media/donut.acd1c5e41caa6a3b416c.png",
+    "static/media/amTable.png": "/my-resume/static/media/amTable.91949ef669683bc05d57.png",
+    "static/media/amMobile.png": "/my-resume/static/media/amMobile.adfa4a5316cdfef6899a.png",
     "static/media/petlyMob.png": "/my-resume/static/media/petlyMob.9b3a0575a4a68a7d421f.png",
     "static/media/filmotekaMob.png": "/my-resume/static/media/filmotekaMob.2bf775a931a213bcd5db.png",
     "static/media/webStudioMob.png": "/my-resume/static/media/webStudioMob.124c7f0d4020392c13fa.png",
@@ -23,13 +21,12 @@
     "static/media/telegram.svg": "/my-resume/static/media/telegram.b82ca60920866afa976a019215ea182a.svg",
     "static/media/Gmail_Logo.svg": "/my-resume/static/media/Gmail_Logo.fd27dc1b2a16c00121cb5bea39f41e59.svg",
     "main.06b42921.css.map": "/my-resume/static/css/main.06b42921.css.map",
-    "main.b3c89c5e.js.map": "/my-resume/static/js/main.b3c89c5e.js.map",
-    "271.066b7149.chunk.js.map": "/my-resume/static/js/271.066b7149.chunk.js.map",
-    "274.80023c72.chunk.js.map": "/my-resume/static/js/274.80023c72.chunk.js.map",
-    "830.376fe656.chunk.js.map": "/my-resume/static/js/830.376fe656.chunk.js.map"
+    "main.71055d7a.js.map": "/my-resume/static/js/main.71055d7a.js.map",
+    "663.197f8c52.chunk.js.map": "/my-resume/static/js/663.197f8c52.chunk.js.map",
+    "968.4341acc8.chunk.js.map": "/my-resume/static/js/968.4341acc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06b42921.css",
-    "static/js/main.b3c89c5e.js"
+    "static/js/main.71055d7a.js"
   ]
 }
