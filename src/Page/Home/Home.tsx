@@ -1,30 +1,12 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Container } from "../../Styles/container.styled";
-import { Section, SectionNext } from "./Home.styled";
+import { Section, SectionNext, SectionPortfolio } from "./Home.styled";
 import { Hero } from "../../Components/Hero/Hero";
 import { About } from "../../Components/About/About";
 import { Skills } from "../../Components/Skills/Skills";
 import { Portfolio } from "../../Components/Portfolio/Portfolio";
-import { useParams } from "react-router-dom";
+import { Contacts } from "../../Components/Contacts/Contacts";
 const Home: React.FC = () => {
-  // const params = useParams();
-  // const blocks = {
-  //   block1: useRef(null),
-  //   block2: useRef(null),
-  // };
-
-  // const scrollToBlock = (block = "") => {
-  //   if (block in blocks) {
-  //     blocks[block].current.scrollIntoView({
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   scrollToBlock(params.block);
-  // }, [params]);
-
   return (
     <>
       <Section>
@@ -45,6 +27,11 @@ const Home: React.FC = () => {
           <Portfolio />
         </Container>
       </SectionNext>
+      {/* <Section id="contacts">
+        <Container>
+          <Contacts />
+        </Container>
+      </Section> */}
     </>
   );
 };

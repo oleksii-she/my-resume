@@ -24,9 +24,6 @@ export const WrapperPortfolio = styled.div`
     font-size: 24px;
     line-height: calc(33 / 24);
     margin-bottom: 15px;
-
-    div {
-    }
   }
   img {
     width: 100%;
@@ -34,12 +31,28 @@ export const WrapperPortfolio = styled.div`
     margin-bottom: 15px;
   }
 
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 50px;
+  }
   p {
     font-size: 18px;
     line-height: calc(22 / 18);
-    margin-bottom: 50px;
+
     color: ${({ theme }) => theme.colors.primary};
     text-decoration: underline;
     cursor: pointer;
+    :hover,
+    :focus {
+      transition: ${({ theme }) => theme.btnHoverFocusScale};
+      scale: ${({ theme }) => theme.btnHoverFocusScale};
+    }
+  }
+
+  .title__team {
+    margin-top: 30px;
+    margin-bottom: 22px;
   }
 `;

@@ -3,6 +3,8 @@ import { up } from "styled-breakpoints";
 
 export const Wrapper = styled.div`
   ${up("tablet")} {
-    padding-top: 35px;
+    padding-top: 39px;
+    padding-bottom: 39px;
   }
+  padding-bottom: 0;
 `;
