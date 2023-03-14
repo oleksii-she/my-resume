@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.06b42921.css",
-    "main.js": "/my-resume/static/js/main.5673a1e9.js",
-    "static/js/699.ad6c9808.chunk.js": "/my-resume/static/js/699.ad6c9808.chunk.js",
+    "main.js": "/my-resume/static/js/main.b3c89c5e.js",
+    "static/js/271.066b7149.chunk.js": "/my-resume/static/js/271.066b7149.chunk.js",
     "static/js/274.80023c72.chunk.js": "/my-resume/static/js/274.80023c72.chunk.js",
-    "static/js/896.245044d8.chunk.js": "/my-resume/static/js/896.245044d8.chunk.js",
+    "static/js/830.376fe656.chunk.js": "/my-resume/static/js/830.376fe656.chunk.js",
     "static/media/amTable.png": "/my-resume/static/media/amTable.f1e53f7e29936b05626d.png",
     "static/media/amMobile.png": "/my-resume/static/media/amMobile.1f7b2b551967356041bf.png",
     "static/media/am.png": "/my-resume/static/media/am.434d617e2f4d3a2a538b.png",
@@ -18,15 +18,18 @@
     "static/media/webStudioMob.png": "/my-resume/static/media/webStudioMob.124c7f0d4020392c13fa.png",
     "static/media/donutMob.png": "/my-resume/static/media/donutMob.019fbe2c088c93e44913.png",
     "static/media/phonebookMob.png": "/my-resume/static/media/phonebookMob.cddb2eb6ce3e19200dd0.png",
+    "static/media/github.svg": "/my-resume/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "index.html": "/my-resume/index.html",
+    "static/media/telegram.svg": "/my-resume/static/media/telegram.b82ca60920866afa976a019215ea182a.svg",
+    "static/media/Gmail_Logo.svg": "/my-resume/static/media/Gmail_Logo.fd27dc1b2a16c00121cb5bea39f41e59.svg",
     "main.06b42921.css.map": "/my-resume/static/css/main.06b42921.css.map",
-    "main.5673a1e9.js.map": "/my-resume/static/js/main.5673a1e9.js.map",
-    "699.ad6c9808.chunk.js.map": "/my-resume/static/js/699.ad6c9808.chunk.js.map",
+    "main.b3c89c5e.js.map": "/my-resume/static/js/main.b3c89c5e.js.map",
+    "271.066b7149.chunk.js.map": "/my-resume/static/js/271.066b7149.chunk.js.map",
     "274.80023c72.chunk.js.map": "/my-resume/static/js/274.80023c72.chunk.js.map",
-    "896.245044d8.chunk.js.map": "/my-resume/static/js/896.245044d8.chunk.js.map"
+    "830.376fe656.chunk.js.map": "/my-resume/static/js/830.376fe656.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06b42921.css",
-    "static/js/main.5673a1e9.js"
+    "static/js/main.b3c89c5e.js"
   ]
 }
