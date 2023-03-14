@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.06b42921.css",
-    "main.js": "/my-resume/static/js/main.71055d7a.js",
+    "main.js": "/my-resume/static/js/main.dacbada9.js",
     "static/js/663.197f8c52.chunk.js": "/my-resume/static/js/663.197f8c52.chunk.js",
     "static/js/968.4341acc8.chunk.js": "/my-resume/static/js/968.4341acc8.chunk.js",
     "static/media/cv.pdf": "/my-resume/static/media/cv.d66097a7df76277d70ce.pdf",
@@ -21,12 +21,12 @@
     "static/media/telegram.svg": "/my-resume/static/media/telegram.b82ca60920866afa976a019215ea182a.svg",
     "static/media/Gmail_Logo.svg": "/my-resume/static/media/Gmail_Logo.fd27dc1b2a16c00121cb5bea39f41e59.svg",
     "main.06b42921.css.map": "/my-resume/static/css/main.06b42921.css.map",
-    "main.71055d7a.js.map": "/my-resume/static/js/main.71055d7a.js.map",
+    "main.dacbada9.js.map": "/my-resume/static/js/main.dacbada9.js.map",
     "663.197f8c52.chunk.js.map": "/my-resume/static/js/663.197f8c52.chunk.js.map",
     "968.4341acc8.chunk.js.map": "/my-resume/static/js/968.4341acc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06b42921.css",
-    "static/js/main.71055d7a.js"
+    "static/js/main.dacbada9.js"
   ]
 }
