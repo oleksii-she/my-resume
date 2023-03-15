@@ -21,7 +21,7 @@ export const Contacts: React.FC = () => {
       <button onClick={() => toggleModalMode(isModalOpen)}>Send message</button>
 
       <ContactsBox>
-        <div>
+        <div className="email__wrapper">
           <a
             href="mailto:oleksii.shevchenko92@gmail.com"
             target="_blank"
@@ -33,7 +33,12 @@ export const Contacts: React.FC = () => {
         </div>
         <div className="icon__box">
           <div>
-            <a href="https://t.me/oleksii_she" target="_blank" rel="noreferrer">
+            <a
+              href="https://t.me/oleksii_she"
+              target="_blank"
+              rel="noreferrer"
+              className="link__icon"
+            >
               <span>
                 <TelegramIcon />
               </span>
@@ -45,6 +50,7 @@ export const Contacts: React.FC = () => {
               href="https://www.linkedin.com/in/oleksii-shevchenko-36475a252"
               target="_blank"
               rel="noreferrer"
+              className="link__icon"
             >
               <span>
                 <LinkedinIcon />
@@ -57,6 +63,7 @@ export const Contacts: React.FC = () => {
               href="https://github.com/oleksii-she"
               target="_blank"
               rel="noreferrer"
+              className="link__icon"
             >
               <span>
                 <GithubIcon />

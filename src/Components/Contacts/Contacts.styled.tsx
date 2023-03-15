@@ -53,21 +53,6 @@ export const ContactsWrapper = styled.div`
 `;
 
 export const ContactsBox = styled.div`
-  a {
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    letter-spacing: 0.02em;
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-    :hover,
-    :focus {
-      color: ${({ theme }) => theme.colors.link};
-      transition: ${({ theme }) => theme.btnHoverFocusScale};
-      scale: ${({ theme }) => theme.btnHoverFocusScale};
-    }
-  }
-
   .icon__box {
     margin-top: 18px;
     display: flex;
@@ -80,11 +65,47 @@ export const ContactsBox = styled.div`
     ${up("tablet")} {
       font-size: 22px;
       line-height: calc(20 / 22);
-
-      margin-bottom: 50px;
     }
-
+    cursor: pointer;
     margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    :hover,
+    :focus {
+      color: ${({ theme }) => theme.colors.link};
+      transition: ${({ theme }) => theme.btnHoverFocusScale};
+    }
+  }
+
+  .email__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .link__icon {
+    ${up("tablet")} {
+      font-size: 22px;
+      line-height: calc(20 / 22);
+    }
+    cursor: pointer;
+    margin-bottom: 32px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    :hover,
+    :focus {
+      color: ${({ theme }) => theme.colors.link};
+      transition: ${({ theme }) => theme.btnHoverFocusScale};
+      scale: ${({ theme }) => theme.btnHoverFocusScale};
+    }
   }
 `;
 
