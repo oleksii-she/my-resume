@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { NavList, LinkNav } from "./NavMenu.styled";
-import { MenuContext } from "../Context/MobMenuContext";
+import { ToggleContext } from "../Context/Context";
 
 export const NavMenu: React.FC = () => {
   const location = useLocation();
-  const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
+  const { isMenuOpen, toggleMenuMode } = useContext(ToggleContext);
 
   const MobMenuLinkHandler = () => {
     if (isMenuOpen) {

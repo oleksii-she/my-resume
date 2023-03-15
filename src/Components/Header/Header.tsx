@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MenuContext } from "../Context/MobMenuContext";
+import { ToggleContext } from "../Context/Context";
 import { useMatchMedia } from "../../Hooks/useMatchMedia";
 import { NavMenu } from "../NavMenu/NavMenu";
 import { Wrapper } from "./Header.styled";
@@ -10,7 +10,7 @@ import { Burger } from "../Burger/Burger";
 export const Header: React.FC = () => {
   const { isMobile }: any = useMatchMedia();
 
-  const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
+  const { isMenuOpen, toggleMenuMode } = useContext(ToggleContext);
 
   if (isMenuOpen) {
     document.body.style.overflow = "hidden";

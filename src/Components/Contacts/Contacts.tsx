@@ -1,4 +1,5 @@
-import React from "react";
+import { toast } from "react-toastify";
+import React, { useContext } from "react";
 import {
   ContactsWrapper,
   ContactsBox,
@@ -7,18 +8,17 @@ import {
   TelegramIcon,
 } from "./Contacts.styled";
 import { Modal } from "../Modal/Modal";
-import { useModal } from "../../Hooks/useModal";
 import { FeedbackForm } from "../FeedbackForm/FeedbackForm";
-
+import { ToggleContext } from "../Context/Context";
 export const Contacts: React.FC = () => {
-  const { isShown, toggle } = useModal();
+  const { isModalOpen, toggleModalMode } = useContext(ToggleContext);
 
   return (
     <ContactsWrapper>
       <h2>Contacts</h2>
 
       <p>Want to know more or just chat? You are welcome!</p>
-      <button onClick={toggle}>Send message</button>
+      <button onClick={() => toggleModalMode(isModalOpen)}>Send message</button>
 
       <ContactsBox>
         <div>
@@ -65,11 +65,7 @@ export const Contacts: React.FC = () => {
             </a>
           </div>
         </div>
-        <Modal
-          isShown={isShown}
-          hide={toggle}
-          modalContent={<FeedbackForm />}
-        />
+        <Modal modalContent={<FeedbackForm />} />
       </ContactsBox>
     </ContactsWrapper>
   );

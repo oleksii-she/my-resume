@@ -1,8 +1,7 @@
 import FocusLock from "react-focus-lock";
-
-import React, { FunctionComponent, useEffect } from "react";
+import React, { FunctionComponent, useEffect, useContext } from "react";
 import ReactDOM from "react-dom";
-
+import { ToggleContext } from "../Context/Context";
 import {
   Wrapper,
   StyledModal,
@@ -12,39 +11,37 @@ import {
 } from "./Modal.styled";
 
 export interface ModalProps {
-  isShown: boolean;
-  hide: () => void;
   modalContent: JSX.Element;
 }
 
-export const Modal: FunctionComponent<ModalProps> = ({
-  isShown,
-  hide,
-  modalContent,
-}) => {
+export const Modal: FunctionComponent<ModalProps> = ({ modalContent }) => {
+  const { isModalOpen, toggleModalMode } = useContext(ToggleContext);
+
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.code === "Escape" && isShown) {
-        hide();
+      if (event.code === "Escape" && isModalOpen) {
+        toggleModalMode(!isModalOpen);
       }
     };
 
-    isShown
+    isModalOpen
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "unset");
     document.addEventListener("keydown", onKeyDown, false);
     return () => {
       document.removeEventListener("keydown", onKeyDown, false);
     };
-  }, [hide, isShown]);
+  }, [isModalOpen, toggleModalMode]);
 
   const modal = (
     <React.Fragment>
       <FocusLock>
-        <Backdrop onClick={hide} />
+        <Backdrop onClick={() => toggleModalMode(!isModalOpen)} />
         <Wrapper aria-modal tabIndex={-1} role="dialog">
           <StyledModal>
-            <CloseButton onClick={hide}>X</CloseButton>
+            <CloseButton onClick={() => toggleModalMode(!isModalOpen)}>
+              X
+            </CloseButton>
             <Content>{modalContent}</Content>
           </StyledModal>
         </Wrapper>
@@ -52,5 +49,5 @@ export const Modal: FunctionComponent<ModalProps> = ({
     </React.Fragment>
   );
 
-  return isShown ? ReactDOM.createPortal(modal, document.body) : null;
+  return isModalOpen ? ReactDOM.createPortal(modal, document.body) : null;
 };

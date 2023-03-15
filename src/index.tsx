@@ -9,7 +9,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { theme } from "./Styles/theme";
 import { GlobalStyle } from "./Styles/GlobalStyles";
-import NavState from "./Components/Context/MobMenuContext";
+import NavState from "./Components/Context/Context";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -23,5 +25,6 @@ root.render(
         </ThemeProvider>
       </BrowserRouter>
     </NavState>
+    <ToastContainer />
   </React.StrictMode>
 );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { up } from "styled-breakpoints";
-
+import { Form, Field, ErrorMessage } from "formik";
 export const WrapperFeedback = styled.div`
   padding-top: 25px;
   padding-left: 25px;
@@ -12,27 +12,11 @@ export const WrapperFeedback = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const FormStyled = styled(Form)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  textarea {
-    min-width: 280px;
-    height: 120px;
-    padding: 8px;
-    margin-bottom: 25px;
-    outline: none;
-    resize: none;
-    ${up("tablet")} {
-      width: 450px;
-      height: 150px;
-      border: 1px solid black;
-      border-radius: 18px;
-      margin-bottom: 20px;
-    }
-  }
 
   button {
     font-size: 18px;
@@ -56,8 +40,11 @@ export const Form = styled.form`
       padding: 12px 89px;
     }
   }
+  label {
+    position: relative;
+  }
 `;
-export const Input = styled.input`
+export const Input = styled(Field)`
   min-width: 280px;
   ${up("tablet")} {
     width: 320px;
@@ -76,4 +63,39 @@ export const Input = styled.input`
   }
   margin-bottom: 20px;
   outline: none;
+`;
+
+export const Textarea = styled(Field)`
+  min-width: 280px;
+  height: 120px;
+  padding: 8px;
+  margin-bottom: 25px;
+  outline: none;
+  resize: none;
+  ${up("tablet")} {
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 18px;
+    margin-bottom: 20px;
+  }
+`;
+
+export const Error = styled(ErrorMessage)`
+  position: absolute;
+  bottom: 7px;
+  left: 19px;
+  color: red;
+  font-size: 10px;
+`;
+
+export const ErrorText = styled(ErrorMessage)`
+  position: absolute;
+  bottom: 19px;
+  left: 19px;
+  color: red;
+  font-size: 10px;
+  ${up("tablet")} {
+    bottom: 15px;
+  }
 `;

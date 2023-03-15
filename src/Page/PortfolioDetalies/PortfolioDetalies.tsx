@@ -6,6 +6,7 @@ import { useMatchMedia } from "../../Hooks/useMatchMedia";
 import { Container } from "../../Styles/container.styled";
 import { WrapperDetails } from "./PortfolioDetails";
 import { SectionNext } from "../Home/Home.styled";
+
 const PortfilioDetalies: React.FC = () => {
   const { isMobile }: any = useMatchMedia();
   const { pathname } = useLocation();
