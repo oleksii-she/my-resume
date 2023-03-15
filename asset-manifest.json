@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.6a6f9bd2.css",
-    "main.js": "/my-resume/static/js/main.6741b6ea.js",
-    "static/js/663.d62880c5.chunk.js": "/my-resume/static/js/663.d62880c5.chunk.js",
+    "main.js": "/my-resume/static/js/main.29ca8101.js",
+    "static/js/663.27fc0e90.chunk.js": "/my-resume/static/js/663.27fc0e90.chunk.js",
     "static/js/32.7250f768.chunk.js": "/my-resume/static/js/32.7250f768.chunk.js",
     "static/media/cv.pdf": "/my-resume/static/media/cv.d66097a7df76277d70ce.pdf",
     "static/media/petly.png": "/my-resume/static/media/petly.ebc5de3ea6b85638adfd.png",
@@ -21,12 +21,12 @@
     "static/media/telegram.svg": "/my-resume/static/media/telegram.b82ca60920866afa976a019215ea182a.svg",
     "static/media/Gmail_Logo.svg": "/my-resume/static/media/Gmail_Logo.fd27dc1b2a16c00121cb5bea39f41e59.svg",
     "main.6a6f9bd2.css.map": "/my-resume/static/css/main.6a6f9bd2.css.map",
-    "main.6741b6ea.js.map": "/my-resume/static/js/main.6741b6ea.js.map",
-    "663.d62880c5.chunk.js.map": "/my-resume/static/js/663.d62880c5.chunk.js.map",
+    "main.29ca8101.js.map": "/my-resume/static/js/main.29ca8101.js.map",
+    "663.27fc0e90.chunk.js.map": "/my-resume/static/js/663.27fc0e90.chunk.js.map",
     "32.7250f768.chunk.js.map": "/my-resume/static/js/32.7250f768.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6f9bd2.css",
-    "static/js/main.6741b6ea.js"
+    "static/js/main.29ca8101.js"
   ]
 }
