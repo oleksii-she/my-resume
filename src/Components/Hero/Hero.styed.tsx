@@ -23,7 +23,8 @@ export const Wrapper = styled.div`
   img {
     object-fit: cover;
     width: 100%;
-    height: 478px;
+
+    border-radius: 25px;
     ${up("tablet")} {
       width: 100%;
       width: 100%;
