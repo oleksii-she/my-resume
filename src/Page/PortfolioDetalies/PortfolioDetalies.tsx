@@ -4,31 +4,30 @@ import { IPortfolio } from "../../Components/portfolioObj";
 import { personalProject, commandProject } from "../../Components/portfolioObj";
 import { useMatchMedia } from "../../Hooks/useMatchMedia";
 import { Container } from "../../Styles/container.styled";
-import { WrapperDetalies } from "./PortfolioDetalies.styled";
+import { WrapperDetails } from "./PortfolioDetails";
 import { SectionNext } from "../Home/Home.styled";
 const PortfilioDetalies: React.FC = () => {
   const { isMobile }: any = useMatchMedia();
   const { pathname } = useLocation();
   const [array, setArray]: any = useState([]);
-  console.log(pathname);
 
   useEffect(() => {
-    const detalies = () => {
-      const detaliesPortfolio = [...personalProject, ...commandProject];
+    const details = () => {
+      const detailsPortfolio = [...personalProject, ...commandProject];
       const id = pathname.replace("/portfolio=", "");
-      detaliesPortfolio.forEach((el) => {
+      detailsPortfolio.forEach((el) => {
         if (el.id === id) {
           return setArray([el]);
         }
       });
     };
-    detalies();
+    details();
   }, [pathname]);
 
   return (
     <SectionNext>
       <Container>
-        <WrapperDetalies>
+        <WrapperDetails>
           {array.map(
             ({ id, img, imgMob, link, title, add, text, role }: IPortfolio) => {
               return (
@@ -36,7 +35,7 @@ const PortfilioDetalies: React.FC = () => {
                   <div>
                     <h2>{title}</h2>
                     <p className="pre__title">{role}</p>
-                    <div className="detalies">
+                    <div className="details">
                       <div>
                         <picture>
                           <img src={isMobile ? imgMob : img} alt="webStudio" />
@@ -57,7 +56,7 @@ const PortfilioDetalies: React.FC = () => {
               );
             }
           )}
-        </WrapperDetalies>
+        </WrapperDetails>
       </Container>
     </SectionNext>
   );

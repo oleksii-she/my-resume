@@ -1,3 +1,4 @@
+import React from "react";
 import {
   ContactsWrapper,
   ContactsBox,
@@ -5,14 +6,19 @@ import {
   GithubIcon,
   TelegramIcon,
 } from "./Contacts.styled";
+import { Modal } from "../Modal/Modal";
+import { useModal } from "../../Hooks/useModal";
+import { FeedbackForm } from "../FeedbackForm/FeedbackForm";
 
 export const Contacts: React.FC = () => {
+  const { isShown, toggle } = useModal();
+
   return (
     <ContactsWrapper>
       <h2>Contacts</h2>
 
       <p>Want to know more or just chat? You are welcome!</p>
-      <button>Send message</button>
+      <button onClick={toggle}>Send message</button>
 
       <ContactsBox>
         <div>
@@ -59,6 +65,11 @@ export const Contacts: React.FC = () => {
             </a>
           </div>
         </div>
+        <Modal
+          isShown={isShown}
+          hide={toggle}
+          modalContent={<FeedbackForm />}
+        />
       </ContactsBox>
     </ContactsWrapper>
   );

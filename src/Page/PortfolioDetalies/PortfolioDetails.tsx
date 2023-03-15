@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { up } from "styled-breakpoints";
 
-export const WrapperDetalies = styled.div`
+export const WrapperDetails = styled.div`
   padding-top: 43px;
 
   ${up("tablet")} {
@@ -23,17 +23,20 @@ export const WrapperDetalies = styled.div`
     border-radius: 25px;
     margin-bottom: 20px;
     ${up("tablet")} {
+      width: 100%;
+    }
+    ${up("pc")} {
       width: 640px;
       margin-bottom: 0;
     }
   }
   picture {
-    ${up("tablet")} {
+    ${up("pc")} {
       margin-right: 30px;
     }
   }
-  .detalies {
-    ${up("tablet")} {
+  .details {
+    ${up("pc")} {
       display: flex;
     }
   }

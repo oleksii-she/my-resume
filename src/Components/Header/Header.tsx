@@ -12,6 +12,12 @@ export const Header: React.FC = () => {
 
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
 
+  if (isMenuOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+
   return (
     <Container>
       <Wrapper>
