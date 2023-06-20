@@ -6,6 +6,7 @@ import {
   Nodejs,
   Redux,
   Github,
+  Vuejs
 } from "@styled-icons/boxicons-logos/";
 
 import {
@@ -15,6 +16,7 @@ import {
   Nextdotjs,
   Css3,
   Javascript,
+  
 } from "@styled-icons/simple-icons";
 
 import { StarRate } from "@styled-icons/material/StarRate";
@@ -191,6 +193,16 @@ export const StarRateSilverIconStyle = styled(StarRate)`
   color: #e5e5e5;
 `;
 
+export const VuejsIconStyle = styled(Vuejs)`
+  width: 180px;
+  color: #42b883;
+  margin-bottom: 15px;
+  ${up("tablet")} { 
+    width: 80px;
+  }
+`;
+
+
 export const RatingList = styled.ul`
   display: flex;
   li {
@@ -199,4 +211,5 @@ export const RatingList = styled.ul`
       margin-right: 0;
     }
   }
+  
 `;

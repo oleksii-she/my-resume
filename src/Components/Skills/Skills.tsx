@@ -15,6 +15,7 @@ import {
   StarRateIconStyle,
   StarRateSilverIconStyle,
   RatingList,
+  VuejsIconStyle
 } from "./Skills.styled";
 
 export const Skills: React.FC = () => {
@@ -108,6 +109,28 @@ export const Skills: React.FC = () => {
             </li>
           </RatingList>
         </SkillBox>
+   <SkillBox>
+          <VuejsIconStyle />
+          <p>Vue JS</p>
+          <RatingList>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+          </RatingList>
+        </SkillBox>
+    
         <SkillBox>
           <ReduxIconStyle /> <p>Redux</p>
           <RatingList>
