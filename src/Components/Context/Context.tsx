@@ -30,6 +30,7 @@ const NavState: React.FunctionComponent<Props> = ({ children }) => {
       document.body.style.overflow = "unset";
     }
   }, [isMenuOpen]);
+  
   function toggleMenuMode(): void {
     toggleMenu(!isMenuOpen);
   }
