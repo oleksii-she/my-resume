@@ -26,11 +26,7 @@ const Home: React.FC = () => {
           <Portfolio />
         </Container>
       </SectionNext>
-      {/* <Section id="contacts">
-        <Container>
-          <Contacts />
-        </Container>
-      </Section> */}
+
     </>
   );
 };

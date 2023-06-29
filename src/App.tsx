@@ -13,6 +13,7 @@ const App: React.FC = () => {
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
         <Route path="/:id" element={<Portfolio />}></Route>
+
       </Route>
     </Routes>
   );
