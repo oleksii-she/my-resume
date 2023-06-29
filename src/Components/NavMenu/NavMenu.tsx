@@ -7,13 +7,7 @@ export const NavMenu: React.FC = () => {
   const location = useLocation();
   const { isMenuOpen, toggleMenuMode } = useContext(ToggleContext);
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isMenuOpen]);
+
  
   const MobMenuLinkHandler = () => {
   
@@ -23,6 +17,17 @@ export const NavMenu: React.FC = () => {
     }
     return;
   };
+
+    useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+      console.log('====================================');
+      console.log('hidden');
+      console.log('====================================');
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
 
   return (
     <nav>

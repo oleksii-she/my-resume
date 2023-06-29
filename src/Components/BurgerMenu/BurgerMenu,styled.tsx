@@ -7,8 +7,8 @@ export const MenuWrapper = styled.div`
   left: 0;
   top: 0;
   z-index: 99;
-  background-color: ${({ theme }) => theme.colors.bg};
-  
+  /* background-color: ${({ theme }) => theme.colors.bg}; */
+  background-color: red;
 
   padding: 66px 26px;
   padding-right: 160px;
