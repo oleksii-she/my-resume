@@ -21,9 +21,6 @@ export const NavMenu: React.FC = () => {
     useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
-      console.log('====================================');
-      console.log('hidden');
-      console.log('====================================');
     } else {
       document.body.style.overflow = "unset";
     }
