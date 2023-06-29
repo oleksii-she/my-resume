@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode } from "react";
+import React, { createContext, useState, ReactNode,useEffect } from "react";
 
 export interface IMenuContex {
   isMenuOpen: boolean;
@@ -22,6 +22,14 @@ const NavState: React.FunctionComponent<Props> = ({ children }) => {
   const [isMenuOpen, toggleMenu] = useState<boolean>(false);
   const [isModalOpen, toggleModal] = useState<boolean>(false);
 
+
+        useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
   function toggleMenuMode(): void {
     toggleMenu(!isMenuOpen);
   }
