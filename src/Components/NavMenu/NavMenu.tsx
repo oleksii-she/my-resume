@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import { NavList, LinkNav } from "./NavMenu.styled";
 import { ToggleContext } from "../Context/Context";
 
@@ -7,8 +7,18 @@ export const NavMenu: React.FC = () => {
   const location = useLocation();
   const { isMenuOpen, toggleMenuMode } = useContext(ToggleContext);
 
-  const MobMenuLinkHandler = () => {
+  useEffect(() => {
     if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
+ 
+  const MobMenuLinkHandler = () => {
+  
+    if (isMenuOpen) {
+
       return toggleMenuMode(!isMenuOpen);
     }
     return;
