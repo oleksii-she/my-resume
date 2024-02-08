@@ -1,10 +1,11 @@
 import { Suspense } from "react";
+import { Grid } from 'react-loader-spinner'
 import useScroll from "../../Hooks/useScroll";
 import { Outlet } from "react-router-dom";
 import { Header } from "../Header/Header";
 import { Contacts } from "./../Contacts/Contacts";
 import { Button,IconUp } from "./buttonUp.styled.";
-
+import { Box } from "./laoder.styled";
 export const SharedLayout: React.FC = () => {
   const isScrolled = useScroll()
 
@@ -21,8 +22,8 @@ const onClickTopUp = ()=>{
   return (
     <>
       <Header />
-
-      <Suspense fallback={<div>Loading...</div>}>
+{/* <div ><Audio/></div> */}
+      <Suspense fallback={<Box ><Grid/></Box>}>
         <Outlet />
                {isScrolled && <Button onClick={onClickTopUp}><IconUp/></Button>} 
       </Suspense>

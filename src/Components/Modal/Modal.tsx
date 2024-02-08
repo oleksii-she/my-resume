@@ -37,7 +37,7 @@ export const Modal: FunctionComponent<ModalProps> = ({ modalContent }) => {
     <React.Fragment>
       <FocusLock>
         <Backdrop onClick={() => toggleModalMode(!isModalOpen)} />
-        <Wrapper aria-modal tabIndex={-1} role="dialog">
+        <Wrapper aria-modal tabIndex={-1} role="dialog" className={isModalOpen?`isHidden`:`` }>
           <StyledModal>
             <CloseButton onClick={() => toggleModalMode(!isModalOpen)}>
               X

@@ -1,14 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 700;
-  width: inherit;
-  outline: 0;
-`;
+
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -19,6 +11,26 @@ export const Backdrop = styled.div`
   background: rgba(0, 0, 0, 0.3);
   z-index: 500;
 `;
+
+export const Wrapper = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 700;
+  width: inherit;
+  outline: 0;
+    opacity: 0;
+     transition: opacity 8s ease-in-out;
+  &.isHidden {
+        opacity: 1;
+
+  }
+
+
+
+
+  `;
 
 export const StyledModal = styled.div`
   z-index: 100;
