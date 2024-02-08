@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/my-resume/static/css/main.6a6f9bd2.css",
-    "main.js": "/my-resume/static/js/main.9778b670.js",
-    "static/js/823.ff7e29fa.chunk.js": "/my-resume/static/js/823.ff7e29fa.chunk.js",
+    "main.js": "/my-resume/static/js/main.ee7345aa.js",
+    "static/js/823.90e5d566.chunk.js": "/my-resume/static/js/823.90e5d566.chunk.js",
     "static/js/32.924524a8.chunk.js": "/my-resume/static/js/32.924524a8.chunk.js",
-    "static/js/825.efad4533.chunk.js": "/my-resume/static/js/825.efad4533.chunk.js",
+    "static/js/915.3f1ed89e.chunk.js": "/my-resume/static/js/915.3f1ed89e.chunk.js",
     "static/media/cv.pdf": "/my-resume/static/media/cv.d66097a7df76277d70ce.pdf",
     "static/media/petly.png": "/my-resume/static/media/petly.ebc5de3ea6b85638adfd.png",
     "static/media/filmoteka.png": "/my-resume/static/media/filmoteka.5a652426a3e3ee7fd554.png",
@@ -22,13 +22,13 @@
     "static/media/telegram.svg": "/my-resume/static/media/telegram.b82ca60920866afa976a019215ea182a.svg",
     "static/media/Gmail_Logo.svg": "/my-resume/static/media/Gmail_Logo.636d099b8bc2caaeeec9d00c624a6e0a.svg",
     "main.6a6f9bd2.css.map": "/my-resume/static/css/main.6a6f9bd2.css.map",
-    "main.9778b670.js.map": "/my-resume/static/js/main.9778b670.js.map",
-    "823.ff7e29fa.chunk.js.map": "/my-resume/static/js/823.ff7e29fa.chunk.js.map",
+    "main.ee7345aa.js.map": "/my-resume/static/js/main.ee7345aa.js.map",
+    "823.90e5d566.chunk.js.map": "/my-resume/static/js/823.90e5d566.chunk.js.map",
     "32.924524a8.chunk.js.map": "/my-resume/static/js/32.924524a8.chunk.js.map",
-    "825.efad4533.chunk.js.map": "/my-resume/static/js/825.efad4533.chunk.js.map"
+    "915.3f1ed89e.chunk.js.map": "/my-resume/static/js/915.3f1ed89e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6f9bd2.css",
-    "static/js/main.9778b670.js"
+    "static/js/main.ee7345aa.js"
   ]
 }
