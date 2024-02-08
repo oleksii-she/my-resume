@@ -15,7 +15,10 @@ import {
   StarRateIconStyle,
   StarRateSilverIconStyle,
   RatingList,
-  VuejsIconStyle
+  VuejsIconStyle,
+  TypescriptIconStyle,
+  MongodbIconStyle
+
 } from "./Skills.styled";
 
 export const Skills: React.FC = () => {
@@ -36,7 +39,7 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+             <StarRateIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />
@@ -60,7 +63,49 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
+          <StarRateIconStyle />
+            </li>
+            <li>
               <StarRateSilverIconStyle />
+            </li>
+          </RatingList>
+        </SkillBox>
+                <SkillBox>
+          <ReactLogoIcon />
+          <p>React native</p>
+          <RatingList>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+               <StarRateSilverIconStyle />
+            </li>
+            <li>
+           <StarRateSilverIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+          </RatingList>
+        </SkillBox>
+             <SkillBox>
+          <TypescriptIconStyle />
+          <p>Type script</p>
+          <RatingList>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+          <StarRateSilverIconStyle />
+            </li>
+            <li>
+            <StarRateSilverIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />
@@ -75,7 +120,7 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+            <StarRateIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />
@@ -88,6 +133,29 @@ export const Skills: React.FC = () => {
             </li>
           </RatingList>
         </SkillBox>
+              <SkillBox>
+          <MongodbIconStyle />
+          <p>Mongo DB</p>
+          <RatingList>
+            <li>
+              <StarRateIconStyle />
+            </li>
+            <li>
+            <StarRateIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+            <li>
+              <StarRateSilverIconStyle />
+            </li>
+          </RatingList>
+        </SkillBox>
+
+        
         <SkillBox>
           <NextdotjsIconStyle />
           <p>Next JS</p>
@@ -99,10 +167,10 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+                 <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+              <StarRateIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />
@@ -159,7 +227,7 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+              <StarRateIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />
@@ -204,7 +272,7 @@ export const Skills: React.FC = () => {
               <StarRateIconStyle />
             </li>
             <li>
-              <StarRateSilverIconStyle />
+              <StarRateIconStyle />
             </li>
             <li>
               <StarRateSilverIconStyle />

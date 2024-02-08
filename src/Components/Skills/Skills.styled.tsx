@@ -6,7 +6,8 @@ import {
   Nodejs,
   Redux,
   Github,
-  Vuejs
+  Vuejs,
+  Mongodb
 } from "@styled-icons/boxicons-logos/";
 
 import {
@@ -16,6 +17,8 @@ import {
   Nextdotjs,
   Css3,
   Javascript,
+  Typescript,
+  
   
 } from "@styled-icons/simple-icons";
 
@@ -202,6 +205,26 @@ export const VuejsIconStyle = styled(Vuejs)`
   }
 `;
 
+export const TypescriptIconStyle = styled(Typescript)`
+  width: 180px;
+  color: #42b883;
+  margin-bottom: 15px;
+  ${up("tablet")} { 
+    width: 80px;
+  }
+`;
+
+export const MongodbIconStyle = styled(Mongodb)`
+  width: 180px;
+  color: #42b883;
+  margin-bottom: 15px;
+  ${up("tablet")} { 
+    width: 80px;
+  }
+`;
+
+
+
 
 export const RatingList = styled.ul`
   display: flex;
@@ -213,3 +236,5 @@ export const RatingList = styled.ul`
   }
   
 `;
+
+
